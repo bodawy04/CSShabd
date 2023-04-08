@@ -1,0 +1,199 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;;
+    font-weight: 600;
+    margin: 0%;
+}
+
+.navBar{
+    display: flex;
+    background: linear-gradient(to left,black,white);
+    margin: 0%;
+    height:100px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 30px 0;
+    width:100%;
+}
+
+.prfPic{
+    margin: 2%;
+    margin-left: 5%;
+    height:15%;
+    width:15%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0;
+}
+
+.navLists1, .navCntnts{
+    display: flex;
+    padding-right: 1%;
+    text-align: center;
+}
+
+.navCntnts{
+    text-align: center;
+    padding-right:20px;
+    gap:20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}
+
+.navBtn{
+    border: none;
+    background-color: blue;
+    border-radius: 2em;
+    padding: 10px 20px;
+}
+.navBtn:hover{
+    background-color: aqua;
+    padding:25px 30px;
+    transition: 1s;
+}
+
+.home{
+    margin: 30px 0 ;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+}
+.p{
+    padding-left: 20%;
+}
+
+.pic1{
+    position: relative;
+    margin-top: 50px;
+    animation: mymove 1s infinite;
+}
+@keyframes mymove {
+    from {right: 60%;}
+    to {right: -20%;}
+}
+
+.about{
+    background:linear-gradient(to right,rgb(115, 115, 2),red);
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    margin: 300px 0 0px;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+.pos{
+    position: absolute;
+}
+.klam{
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 20px;
+    color: aliceblue;
+    background-color: aqua;
+}
+
+.pic22{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+.about:hover > .imagee{
+    transform:translateX(-100%) rotate(-5deg);
+    transition-duration:3s;
+}
+.about:hover > .klam{
+    transform:translateX(150%) rotate(5deg);
+    transition-duration:3s;
+}
+
+.work{
+    background:linear-gradient(to right,green,blue);
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    margin: 10px 0 8px;
+}
+.pic3{
+    height: 200px;
+    padding-top: 50px;
+}
+.workCntnt{
+    position: absolute;
+}
+
+.workKlam{
+    background-color: #eee;
+    margin: 80px 0;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+}
+.work:hover > .workCntnt{
+    transform:translateX(100%) rotate(-5deg);
+    transition-duration:3s;
+}
+.work:hover > .workKlam{
+    transform:translateX(-180%) rotate(5deg);
+    transition-duration:3s;
+}
+
+.forCnt{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.contact{
+    padding: 40px;
+    display:flex ;
+    flex-direction: column;
+    background: linear-gradient(to right,#6157FF,#EE49FD);
+    gap: 20px;
+}
+#name,#mail,#mobNum{
+    background-color: transparent;
+    text-align: center;
+    border:none;
+    color:black;
+    border-bottom: 1px solid black;
+}
+#name:hover, #mail:hover , #mobNum:hover{
+    background: linear-gradient(white,white) padding-box,
+                linear-gradient(to right, yellow, lime) border-box;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
+#name:focus, #mail:focus , #mobNum:focus{
+    background: linear-gradient(white,white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: 5px 10px 20px  ;
+}
+
+#cntctBtn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+#cntctBtn:hover{
+    cursor: pointer;
+}
+
+footer{
+    background:linear-gradient(to left,aqua,black);
+    text-align: center;
+    padding-top: 40px;
+    height:100px;
+}
